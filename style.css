@@ -5,6 +5,9 @@ body {
   font-family: Lato, sans-serif;
 }
 
+
+/*Header start*/
+
 .header {
   width: 500px;
   margin: 0 auto;
@@ -25,8 +28,11 @@ body {
     text-align: center;
   }
 }
+/*Header end*/
 
-.centered-main-page-element {
+/*Main start*/
+
+.wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -44,7 +50,7 @@ body {
 
 ul {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 li, h3 {
@@ -57,7 +63,7 @@ input, button {
 
 button {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
