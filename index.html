@@ -3,7 +3,7 @@
 <head>
   <title>Todo App</title>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/style.css" media="screen">
 </head>
 <body>
@@ -14,28 +14,28 @@
   </a>
 </header>
 <main>
-  <div class="wrapper">
-    <section class="new__task_form">
+  <div class="todos wrapper">
+    <section class="todos__section task-form">
       <label
-              for="new__task"
-              class="new__task_label"
+              for="task-form__new-input"
+              class="task-form__new-label"
       >
         Add Item
       </label>
-      <div class="new__task_wrapper">
+      <div class="task-form__new-wrapper">
         <input
-                id="new__task"
-                class="new__task"
+                id="task-form__new-input"
+                class="task-form__new-input"
                 type="text"
         >
-        <button class="new__task_btn">Add</button>
+        <button class="task-form__new-button">Add</button>
       </div>
     </section>
 
-    <section class="uncompleted__todos">
+    <section class="todos__section uncompleted-todos">
       <article><h3>Todo</h3></article>
-      <ul id="uncompleted__tasks">
-        <li class="uncompleted__task">
+      <ul id="uncompleted-tasks">
+        <li class="uncompleted-tasks__task">
           <input
                   class="task__checkbox"
                   type="checkbox"
@@ -54,7 +54,7 @@
             >
           </button>
         </li>
-        <li class="uncompleted__task edit_mode">
+        <li class="uncompleted-tasks__task edit_mode">
           <input
                   class="task__checkbox"
                   type="checkbox"
@@ -75,28 +75,28 @@
         </li>
       </ul>
     </section>
-    <section class="completed__todos">
+    <section class="todos__section completed-todos">
       <article><h3>Completed</h3></article>
-      <ul id="completed__tasks">
-        <li class="completed__task">
-            <input
-                    class="task__checkbox"
-                    type="checkbox"
-                    checked
+      <ul id="completed-tasks">
+        <li class="completed-tasks__task">
+          <input
+                  class="task__checkbox"
+                  type="checkbox"
+                  checked
+          >
+          <label class="task__label">See the Doctor</label>
+          <input
+                  class="task__text"
+                  type="text"
+          >
+          <button class="task__edit">Edit</button>
+          <button class="task__delete">
+            <img
+                    class="close__image"
+                    src="assets/icons/remove.svg"
+                    alt="close"
             >
-            <label class="task__label">See the Doctor</label>
-            <input
-                    class="task__text"
-                    type="text"
-            >
-            <button class="task__edit">Edit</button>
-            <button class="task__delete">
-                <img
-                        class="close__image"
-                        src="assets/icons/remove.svg"
-                        alt="close"
-                >
-            </button>
+          </button>
         </li>
       </ul>
     </section>
