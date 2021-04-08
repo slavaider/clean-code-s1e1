@@ -56,13 +56,13 @@ ul li input[type="text"] {
   color: #CF2323;
 }
 
-.task__delete img {
+.task__delete .task__delete-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.task__delete img:hover {
+.task__delete .task__delete-image:hover {
   transform: rotateZ(0);
 }
 
@@ -82,7 +82,7 @@ ul li input[type="text"] {
 
 /* Edit Task end */
 
-/*Buttons*/
+/*Buttons default*/
 
 button {
   background: none;
@@ -143,7 +143,7 @@ input[type="text"]:focus {
   text-align: right;
 }
 
-.header img {
+.header .header__image {
   width: 100%;
 }
 
