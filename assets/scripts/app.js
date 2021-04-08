@@ -8,17 +8,17 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-const taskInput = document.getElementById("new__task");//Add a new task.
+const taskInput = document.getElementById("task-form__new-input");//Add a new task.
 const addButton = document.getElementsByTagName("button")[0];//first button
-const incompleteTaskHolder = document.getElementById("uncompleted__tasks");//ul of #incompleteTasks
-const completedTasksHolder = document.getElementById("completed__tasks");//completed-tasks
+const incompleteTaskHolder = document.getElementById("uncompleted-tasks");//ul of #incompleteTasks
+const completedTasksHolder = document.getElementById("completed-tasks");//completed-tasks
 
 
 //New task list item
 const createNewTaskElement = function (taskString) {
 
     const listItem = document.createElement("li");
-    listItem.className = 'uncompleted__task'
+    listItem.className = 'uncompleted-tasks__task'
     //input (checkbox)
     const checkBox = document.createElement("input");//checkbox
     //label
